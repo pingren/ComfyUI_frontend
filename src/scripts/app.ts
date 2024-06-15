@@ -1492,7 +1492,7 @@ export class ComfyApp {
 
 	    const extensionPromises = extensions.map(async ext => {
 	        try {
-	            await import(api.apiURL(ext));
+	            // await import(api.apiURL(ext));
 	        } catch (error) {
 	            console.error("Error loading extension", ext, error);
 	        }
